@@ -1,0 +1,19 @@
+.a {
+  font-size: 20px;
+  padding: 11px;
+  background-color: #f4f4f4;
+  border: 0;
+}
+.submit{
+  width: 45px;
+  position: relative;
+  &:after{
+    content: url(../../common/images/add.svg);
+    position: absolute;
+    background-color: white;
+    left: -3px;
+    padding: 13px;
+    top: -28px;
+    height: 19px;
+  }
+}

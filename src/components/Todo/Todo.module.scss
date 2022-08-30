@@ -1,0 +1,70 @@
+.wrapper {
+  height: 100vh;
+  background: rgb(68, 94, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(68, 94, 168, 1) 0%,
+    rgba(73, 27, 115, 1) 100%
+  );
+  text-align: center;
+}
+.head {
+  font-size: 40px;
+  text-shadow: 0px 0px 7px rgb(255 255 255 / 76%);
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.li {
+  display: flex;
+  justify-content: center;
+}
+.task {
+  display: flex;
+  width: 20%;
+  padding: 10px;
+  font-size: 20px;
+  text-align: left;
+  background-color: white;
+}
+.checkbox {
+  position: relative;
+  &:after {
+    content: url(../../common/images/checked.svg);
+    position: absolute;
+    background-color: white;
+    max-height: 47px;
+    z-index: 1;
+  }
+}
+.delete_task {
+  position: relative;
+  &:after {
+    content: url(../../common/images/trash.svg);
+    position: absolute;
+    background-color: #491376;
+    max-height: 47px;
+    right: -57px;
+    top: -2px;
+    padding: 14px;
+    height: 19px;
+  }
+}
+.flex_wrap {
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background-image: url(../../common/images/down-arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 26px;
+  background-position-y: -2px;
+}
